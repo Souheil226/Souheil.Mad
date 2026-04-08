@@ -238,10 +238,11 @@ text-align: center;
 
 .typing-text {
     color: #3a4b92; 
-    border-right: 3px solid #3a4b92;
-    padding-right: 5px;
-    animation: blink 0.7s infinite;
+    border-right: 2px solid #3a4b92;
+    padding-right: 6px;
+    animation: blink 0.7s ease;
     font-size: 1;
+
 }
 
 @keyframes blink {
@@ -468,6 +469,28 @@ color: #E2E8F0;
 
 
 
+        /* تنسيق شريط المهارات */
+.skill-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #3a4b92; /* نفس لون التنسيق الخاص بك */
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+/* تحسين شكل بطاقة المشاريع */
+.card2 .main-btn {
+    display: inline-block;
+    text-decoration: none;
+}
 
 
 
@@ -489,6 +512,44 @@ color: #E2E8F0;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* الحاوية التي تحتوي على الكروت */
+.content, .content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px; /* هذا يعطي عمقاً للحركة */
+}
+
+.card, .card2 {
+    transform-style: preserve-3d;
+    transition: all 0.2s ease;
+    /* تأكد أن الكارد له خلفية لكي يظهر التأثير */
+}
+
+/* حركة إضافية: جعل المحتوى داخل الكارد يبرز للأمام عند الإمالة */
+.card:hover .icon, .card:hover .info {
+    transform: translateZ(30px);
+}
 
 
 
