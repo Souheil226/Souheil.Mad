@@ -508,7 +508,18 @@ color: #E2E8F0;
 
 
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
+.project-image img {
+    width: 100%; /* أو حدد عرضاً معيناً يناسب شاشة الهاتف */
+    max-width: 300px; /* مثال لحجم مناسب */
+    
+    margin: 0 auto;
+}
 
 
 
