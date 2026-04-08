@@ -705,5 +705,16 @@ img {
         padding: 0.8em 1.5em;
         font-size: 0.9em;
     }
+
+    .project-image {
+        margin: 0 auto 30px; 
+        width: 180px !important; 
+        margin-bottom: 20px;
+        justify-content: center !important;
+        display: flex !important;
+
+    
+    }
+
 }
 
